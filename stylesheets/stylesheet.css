@@ -46,7 +46,7 @@ header {
 header h1 {
   font-size: 30px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
+  margin: 0 0 0 0;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #FF7F50;
@@ -58,7 +58,11 @@ header h1 {
 }
 
 header h1:before {
-  content: "./ ";
+  content: "";
+  font-size: 24px;
+}
+header h1:after {
+  content: "";
   font-size: 24px;
 }
 
@@ -226,6 +230,12 @@ hr {
   opacity: 0.6;
   background-size: 16px 16px;
   background: url("../images/linkedin.png") 0 0 no-repeat;
+}
+
+.btn-twitter .icon {
+  opacity: 0.6;
+  background-size: 16px 16px;
+  background: url("../images/twitterx16.png") 0 0 no-repeat;
 }
 
 /* Links
